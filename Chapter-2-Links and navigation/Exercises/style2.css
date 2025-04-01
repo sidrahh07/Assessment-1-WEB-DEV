@@ -1,0 +1,7 @@
+body{
+    background-color: beige ;
+}
+.menu{background-color:darkcyan; overflow: hidden; padding: auto;padding: 15px 22px; border: 5px solid black}
+.menu a{color: white; text-align: center;padding: 15px 17px;border: 5px solid black; text-decoration: none; 
+font-size: 20px;}
+.menu a:hover{background-color: cyan; color: black;}
