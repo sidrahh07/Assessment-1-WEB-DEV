@@ -1,0 +1,21 @@
+h1{
+    background-color: palevioletred;
+    text-align: center;
+    padding: 40px;
+}
+
+#htmlpart{
+    background-color: lightblue;
+    text-align: center;
+}
+
+#csspart{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.code{
+    color: white;
+    background-color: black;
+    margin: auto;
+}
