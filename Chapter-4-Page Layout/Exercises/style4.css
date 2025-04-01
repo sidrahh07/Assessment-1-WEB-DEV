@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+    background-color: #ffffff;
+    color: #000000;
+}
+header {
+    background-color: #17072b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Tahoma; /*choosing the font*/
+    font-weight: 700; /*makes the text thicker*/
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline; /*setting the structure of the list to be in the line*/
+    margin: 0 15px; 
+}
+nav ul li a {
+    color: white;
+    text-decoration: none; /*getting rid of the underline*/
+}
+main {
+    display: flex; /*makes it easier to move items around*/
+    justify-content: space-between;
+    padding: 20px;
+}
+.welcome {
+    width: 65%;
+}
+.welcome h2 {
+    font-family: Tahoma;
+    font-weight: 700;
+}
+.welcome img {
+    width: 100%;
+    margin-top: 10px;
+}
+.lineup {
+    width: 30%;
+    background-color: #172d67;
+    color: white;
+    padding: 15px;
+}
+.lineup h2 {
+    font-family: Tahoma;
+    font-weight: 700;
+}
+.lineup_images {
+    margin-top: 10px;
+}
+.lineup_images img {
+    width: 48%;
+}
+footer {
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
