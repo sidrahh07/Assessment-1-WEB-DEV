@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* removing any default margin or padding settings */
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* navigation bar*/
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+/* main content */
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    /* adding shadow around the main content  */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* study plan boxes/columns Layout */
+.boxes {
+    display: flex;
+    justify-content: flex-start;
+}
+.box{
+    padding: 20px;
+    margin: 10px;
+    background: rgb(155, 150, 150);
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2aa5ce;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    margin: 10px auto;
+}
+button:hover {
+    background-color: #005f75;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background:black;
+    color: white;
+    margin-top: 20px;
+}
