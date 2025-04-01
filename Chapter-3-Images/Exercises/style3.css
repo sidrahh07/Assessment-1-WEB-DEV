@@ -1,0 +1,20 @@
+img{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%) contrast(100%) brightness(120%); /*adjusuting the look of the images*/
+    border-radius: 10px; /*giving the pictures a curved border*/
+}
+.pics{
+    display: flex; /*makes it easier to move around items*/
+    justify-content: space-between; 
+    gap: 10px; /*leaveing some space between the pictures*/
+}
+body{
+    /*setting the background as a color gradient image*/
+    background-image: linear-gradient(to bottom right, rgb(176, 77, 176), rgb(102, 102, 226));
+}
+p{
+    background-color: powderblue;
+    border-radius: 10px;
+    text-align: center; /*aligns text in the center*/
+}
