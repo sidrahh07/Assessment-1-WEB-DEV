@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petrol calculator</title>
+    <style>
+        body{
+           background-color: bisque;
+           text-align: center;
+           margin: 50px;
+        }
+        .mainbox{
+            background-color: rgba(249, 131, 131, 0.89);
+            border-radius: 10px;
+            margin: 150px;
+            border: 2px solid;
+            border-color: darkred;
+        }
+        button{
+            padding: 5;
+            cursor: pointer; /*changes the cursor to the pointer one when its on the button*/
+        }
+        button:hover{
+            background-color:bisque ;
+            border: 2px solid darkred;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Petrol Cost Calculator</h2>
+        
+        <!-- input field for cost per liter, and the default value is set to 1.72 -->
+        <label>cost per liter:</label>
+        <input type="number" id="cost_perliter" value="1.72" step="0.01"> <br>
+        
+        <!-- input area for number of liters, default value is set to 0 -->
+        <label>no. of liters purchased:</label>
+        <input type="number" id="purchasedliters" value="0" step="0.01"> <br>
+        
+        <!-- adding a button to calculate total cost after the user clicks the button -->
+        <button onclick="calculatecost()">calculate</button>
+        
+        <!-- area to display total cost -->
+        <p id="totalcost">Total amount: 0.00</p>
+    </div>
+
+    <script>
+        //function to calculate the total cost
+        function calculatecost() {
+            //get input values
+            let costPerLiter=parseFloat(document.getElementById("cost_perliter").value);
+            let liters=parseFloat(document.getElementById("purchasedliters").value);
+            //calculate total cost
+            let total=costPerLiter * liters;
+            
+            //shows the calculated total, with 2 decimal places
+            document.getElementById("totalcost").textContent="Total Cost: "+total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
